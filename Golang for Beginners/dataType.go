@@ -29,6 +29,15 @@ func main() {
 	var number4 int64 = 1111111111111111111
 	var number5 int = 1111111111111111111
 	fmt.Println(number1, number2, number3, number4, number5)
+
+	// unsigned integer
+	// integer
+	var unsigned_number1 uint8 = 111
+	var unsigned_number2 uint16 = 11111
+	var unsigned_number3 uint32 = 1111111111
+	var unsigned_number4 uint64 = 1111111111111111111
+	var unsigned_number5 uint = 1111111111111111111
+	fmt.Println("UNSIGNED", unsigned_number1, unsigned_number2, unsigned_number3, unsigned_number4, unsigned_number5)
 	// array
 	// slices (same as array but provide more control over memory allocation)
 	// map

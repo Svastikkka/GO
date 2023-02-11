@@ -1,7 +1,7 @@
 package main
 
-import "fmt" // fmt: means format for I/O
+import "fmt"
 
 func main() {
-	fmt.Print("Hello World")
+	fmt.Print("Hello, world!")
 }
