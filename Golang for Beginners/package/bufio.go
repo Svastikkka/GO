@@ -1,0 +1,1 @@
+// The bufio module implements buffered I/O which helps to improve the CPU performance.
