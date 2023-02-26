@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
 	// boolean
@@ -60,16 +64,16 @@ func main() {
 	// map
 	// Reference: https://www.geeksforgeeks.org/golang-maps/
 	// Creating map using make()
-	name := bufio.NewScanner(os.Stdin)
-	name.Scan()
+	names := bufio.NewScanner(os.Stdin)
+	names.Scan()
 	address := bufio.NewScanner(os.Stdin)
 	address.Scan()
 	m := make(map[string]string)
-	m[name.Text()] = address.Text()
+	m[names.Text()] = address.Text()
 	fmt.Println(m)
 
 	// Initializing Map using literals
-	n := map[string]string{ name.Text(): address.Text() }
+	n := map[string]string{names.Text(): address.Text()}
 	fmt.Println(n)
 
 	// struct (aggregate data type)
