@@ -50,3 +50,21 @@ This will produce and output HelloWorld which is an executable. To run the file,
 ## How can I Debug the code?
 You can set break points by clicking to the left of line number where you want to break and investigate.
 You can use the debugger in VSCode IDE using the icon on the left panel.
+
+# Table of content
+
+## Variable declaration
+- EXAMPLE
+
+## Data types
+- INT
+- FLOAT
+- STRING
+
+## Functions
+- Functions as variable
+- Functions as argument
+- Function as anonymous
+
+# Reference
+- W3School: https://www.w3schools.com/go/index.php
