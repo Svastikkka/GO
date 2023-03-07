@@ -68,3 +68,6 @@ You can use the debugger in VSCode IDE using the icon on the left panel.
 
 # Reference
 - W3School: https://www.w3schools.com/go/index.php
+
+# Intresting 
+https://www.digitalocean.com/community/tutorials/how-to-use-json-in-go
