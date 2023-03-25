@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/pkg/handlers"
+	"github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/28EnablingGoModulesAndRefactoringOurCodeToUsePackage/pkg/handlers"
 	"net/http"
 )
 
