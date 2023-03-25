@@ -1,3 +1,3 @@
-module github.com/svastikkka/BuildingModernWebApplicationsWithGo/28EnablingGoModulesAndRefactoringOurCodeToUsePackage
+module github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/28EnablingGoModulesAndRefactoringOurCodeToUsePackage
 
 go 1.19
