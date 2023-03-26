@@ -1,0 +1,3 @@
+module github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/33SettingApplicationWideConfiguration
+
+go 1.19
