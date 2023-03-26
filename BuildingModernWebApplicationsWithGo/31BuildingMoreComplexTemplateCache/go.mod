@@ -1,3 +1,3 @@
-module github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo
+module github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/31BuildingMoreComplexTemplateCache
 
 go 1.19
