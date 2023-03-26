@@ -66,8 +66,19 @@ You can use the debugger in VSCode IDE using the icon on the left panel.
 - Functions as argument
 - Function as anonymous
 
-# Reference
-- W3School: https://www.w3schools.com/go/index.php
+## Create your own workspace for multiple GO modules
+```
+go work init
+go work use ./path-to-module  ./path-to-module2
+```
 
-# Intresting 
-https://www.digitalocean.com/community/tutorials/how-to-use-json-in-go
+Example
+```
+go work init
+go work use ./BuildingModernWebApplicationsWithGo/31BuildingMoreComplexTemplateCache
+```
+
+# Reference
+- [W3School](https://www.w3schools.com/go/index.php)
+- [Workspace](https://stackoverflow.com/a/58524450/14010585)
+- [Use JSON in GO](https://www.digitalocean.com/community/tutorials/how-to-use-json-in-go)
