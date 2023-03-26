@@ -9,7 +9,7 @@ import (
 	"text/template"
 )
 
-func RenderTemplateTest(w http.ResponseWriter, templ string) {
+func RenderTemplate(w http.ResponseWriter, templ string) {
 
 	// create a template cache
 	tc, err := createTemplateCache()
