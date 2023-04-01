@@ -81,8 +81,7 @@ func main() {
 		Name string
 		Age  int
 	}
-	Details := Person{Name: "Manshu Sharma"}
-	personAge := Person{Age: 25}
+	Details := Person{Name: "Manshu Sharma", Age: 25}
 
 	fmt.Println(Details.Name)
 	fmt.Println(Details.Age)
