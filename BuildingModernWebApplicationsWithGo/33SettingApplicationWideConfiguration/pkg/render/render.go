@@ -6,13 +6,13 @@ import (
 	"log"
 	"net/http"
 	"path/filepath"
-	"text/template"
+	"html/template"
 )
 
 func RenderTemplate(w http.ResponseWriter, templ string) {
 
 	// create a template cache
-	tc, err := createTemplateCache()
+	tc, err := CreateTemplateCache()
 	if err != nil {
 		log.Fatal("Die while creating template")
 	}
@@ -33,7 +33,7 @@ func RenderTemplate(w http.ResponseWriter, templ string) {
 		log.Println(err)
 	}
 }
-func createTemplateCache() (map[string]*template.Template, error) {
+func CreateTemplateCache() (map[string]*template.Template, error) {
 	myCache := map[string]*template.Template{}
 
 	// get all of the files named *.tmpl
