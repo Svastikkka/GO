@@ -28,14 +28,12 @@ func RenderTemplate(w http.ResponseWriter, templ string) {
 		log.Fatal("Template Not Found")
 	}
 	buf := new(bytes.Buffer)
-	err = t.Execute(buf, nil)
-	if err != nil {
-		log.Println(err)
-	}
+	_ = t.Execute(buf, nil)
+
 	// render the template
-	_, err = buf.WriteTo(w)
+	_, err := buf.WriteTo(w)
 	if err != nil {
-		log.Println(err)
+		log.Println("Error writing template into a browser")
 	}
 }
 func CreateTemplateCache() (map[string]*template.Template, error) {
