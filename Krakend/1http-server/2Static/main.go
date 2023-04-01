@@ -6,8 +6,6 @@ import (
 	"fmt"
 	"html"
 	"net/http"
-
-	"github.com/svastikkka/GO/Krakend/2Static/pkg/handlers"
 )
 
 // pluginName is the plugin name
@@ -24,8 +22,6 @@ func (r registerer) RegisterHandlers(f func(
 )) {
 	f(string(r), r.registerHandlers)
 }
-
-const port = ":8080"
 
 func (r registerer) registerHandlers(_ context.Context, extra map[string]interface{}, h http.Handler) (http.Handler, error) {
 	// If the plugin requires some configuration, it should be under the name of the plugin. E.g.:
@@ -60,10 +56,8 @@ func (r registerer) registerHandlers(_ context.Context, extra map[string]interfa
 		}
 
 		// The path has to be hijacked:
-		//fmt.Fprintf(w, "Hello, %q", html.EscapeString(req.URL.Path))
+		fmt.Fprintf(w, "Hello, %q", html.EscapeString(req.URL.Path))
 		logger.Debug("request:", html.EscapeString(req.URL.Path))
-		http.HandleFunc("/", handlers.Home)
-		http.HandleFunc("/about", handlers.About)
 	}), nil
 }
 
