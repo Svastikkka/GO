@@ -77,4 +77,13 @@ func main() {
 	fmt.Println(n)
 
 	// struct (aggregate data type)
+	type Person struct {
+		Name string
+		Age  int
+	}
+	personName := Person{Name: "Manshu Sharma"}
+	personAge := Person{Age: 25}
+
+	fmt.Println(personName)
+	fmt.Println(personAge)
 }
