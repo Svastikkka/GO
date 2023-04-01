@@ -13,7 +13,7 @@ import (
 const port = ":8080"
 
 func main() {
-	fmt.Print("Starting server at port %d", port)
+	fmt.Print("Starting server at port", port)
 	var app config.AppConfig
 
 	tc, err := render.CreateTemplateCache()
