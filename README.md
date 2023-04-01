@@ -135,3 +135,4 @@ go work use ./BuildingModernWebApplicationsWithGo/31BuildingMoreComplexTemplateC
 - [Printf](https://www.educative.io/answers/how-to-use-the-printf-function-in-golang)
 - [defer](https://www.educative.io/answers/what-is-the-defer-keyword-in-golang)
 - [Getting Started with Redis and Go - Tutorial](https://tutorialedge.net/golang/go-redis-tutorial/)
+- [Go Tutorial: Connecting to a Database | Redis](https://www.youtube.com/watch?v=6lJCyKwoQaQ)
