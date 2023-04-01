@@ -30,6 +30,7 @@
   - GoCode - an autocompletion daemon for the Go programming language
   - GoReturns - adds zero-value return values to incomplete Go return statements, to save you time when writing Go.
   - GoLint - lints the Go source files named on its command line.
+  - GoPls - A Go server developed by Go Team `go install -v golang.org/x/tools/gopls@latest`
   
 ## How can I compile Go Code in my Terminal?
 Open the terminal and navigate to the directory containing your file. For example, if your code file is HelloWorld.go, run the following command to compile.
@@ -54,17 +55,18 @@ You can use the debugger in VSCode IDE using the icon on the left panel.
 # Table of content
 
 ## Variable declaration
-- EXAMPLE
+- Example
 
 ## Data types
-- INT
-- FLOAT
-- STRING
+- Int
+- Float
+- String
+- Boolean
 
 ## Functions
 - Functions as variable
 - Functions as argument
-- Function as anonymous
+- Functions as anonymous
 
 ## Create your own workspace for multiple GO modules
 ```
