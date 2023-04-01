@@ -132,3 +132,4 @@ go work use ./BuildingModernWebApplicationsWithGo/31BuildingMoreComplexTemplateC
 - [W3School](https://www.w3schools.com/go/index.php)
 - [Workspace](https://stackoverflow.com/a/58524450/14010585)
 - [Use JSON in GO](https://www.digitalocean.com/community/tutorials/how-to-use-json-in-go)
+- [Printf](https://www.educative.io/answers/how-to-use-the-printf-function-in-golang)
