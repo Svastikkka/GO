@@ -128,6 +128,22 @@ go work init
 go work use ./BuildingModernWebApplicationsWithGo/31BuildingMoreComplexTemplateCache
 ```
 
+
+## To Run Your tests
+
+### To run your tests
+```
+cd PATH/
+go test
+```
+### To check your coverage while running tests
+```
+cd PATH/
+go test -cover
+```
+
+*Note* We nned to add `_test` so the Go can recongnize it as tests
+
 # Reference
 - [W3School](https://www.w3schools.com/go/index.php)
 - [Workspace](https://stackoverflow.com/a/58524450/14010585)
