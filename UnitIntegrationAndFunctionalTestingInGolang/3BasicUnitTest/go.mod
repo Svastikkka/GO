@@ -1,3 +1,3 @@
-module github.com/Svastikkka/GO/tree/main/UnitIntegrationAndFunctionalTestingInGolang/3BasicUnitTest
+module utils
 
 go 1.20
