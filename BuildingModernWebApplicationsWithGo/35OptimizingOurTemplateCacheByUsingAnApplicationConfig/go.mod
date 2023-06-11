@@ -1,3 +1,3 @@
-module github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/35OptimizingOurTemplateCacheByUsingAnApplicationConfig
+module 35OptimizingOurTemplateCacheByUsingAnApplicationConfig
 
 go 1.19

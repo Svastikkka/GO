@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/config"
+	"35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/config"
 )
 
 var app *config.AppConfig
@@ -19,8 +19,13 @@ func NewTemplate(a *config.AppConfig) {
 }
 
 func RenderTemplate(w http.ResponseWriter, templ string) {
+	var tc map[string]*template.Template
 
-	tc := app.TemplateCache
+	if app.UseCache {
+		tc = app.TemplateCache
+	} else {
+		tc, _ = CreateTemplateCache()
+	}
 
 	// get requested template from cache
 	t, ok := tc[templ]

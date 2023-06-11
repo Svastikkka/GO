@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/config"
-	"github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/handlers"
-	"github.com/svastikkka/GO/BuildingModernWebApplicationsWithGo/35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/render"
+	"35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/config"
+	"35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/handlers"
+	"35OptimizingOurTemplateCacheByUsingAnApplicationConfig/pkg/render"
 )
 
 const port = ":8080"
@@ -22,10 +22,13 @@ func main() {
 	}
 
 	app.TemplateCache = tc
+	app.UseCache = false
+	repo := handlers.NewRepo(&app)
+	handlers.NewHandlers(repo)
 
 	render.NewTemplate(&app)
 
-	http.HandleFunc("/", handlers.Home)
-	http.HandleFunc("/about", handlers.About)
+	http.HandleFunc("/", handlers.Repo.Home)
+	http.HandleFunc("/about", handlers.Repo.About)
 	_ = http.ListenAndServe(port, nil)
 }
